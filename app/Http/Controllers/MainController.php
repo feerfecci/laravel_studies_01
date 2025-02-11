@@ -6,7 +6,13 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function teste($value) :void {
-        echo "A string final é " . $this->cleanUpperCaseString($value);
+    public function index():void {
+        echo '<p>Index</p>';
+    }
+    public function about():void {
+        echo '<p>about</p>';
+    }
+    public function contact():void {
+        echo '<p>contact</p>';
     }
 }
